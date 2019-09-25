@@ -12,7 +12,13 @@ class ChifoumiTest extends TestCase
         $partie = new Chifoumi();
         $this->assertEquals(
             Chifoumi::RESULTAT_EGALITE,
-            $partie->joue(Chifoumi::JEU_FEUILLE, Chifoumi::JEU_FEUILLE)
+            $partie->joue(Chifoumi::GESTE_FEUILLE, Chifoumi::GESTE_FEUILLE)
         );
+    }
+    public function test_feuille_contre_pierre_gagne(){
+        $partie=new Chifoumi();
+        $resultat=$partie->joue(Chifoumi::GESTE_FEUILLE, Chifoumi::GESTE_PIERRE);
+        $this->assertEquals($resultat,Chifoumi::GESTE_FEUILLE);
+
     }
 }
