@@ -2,15 +2,12 @@
 
 namespace App;
 
-class Chifoumi
+class Arbitre
 {
 
     const RESULTAT_EGALITE = "égalité";
-    const GESTE_FEUILLE = "feuille";
-    const GESTE_PIERRE = "pierre";
-    const GESTE_CISEAUX = "ciseaux";
 
-    public function joue(Geste $gesteJoueur1, Geste $gesteJoueur2)
+    public function juge(Geste $gesteJoueur1, Geste $gesteJoueur2)
     {
 
         if($gesteJoueur1->gagneContre($gesteJoueur2)){

@@ -6,6 +6,6 @@ namespace App;
 
 class Ciseaux extends Geste
 {
-    const MARTYR = Chifoumi::GESTE_FEUILLE;
-    const GESTE = Chifoumi::GESTE_CISEAUX;
+    const MARTYR = Geste::FEUILLE;
+    const GESTE = Geste::CISEAUX;
 }

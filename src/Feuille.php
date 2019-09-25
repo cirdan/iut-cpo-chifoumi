@@ -6,8 +6,8 @@ namespace App;
 
 class Feuille extends Geste
 {
-    const MARTYR = Chifoumi::GESTE_PIERRE;
-    const GESTE = Chifoumi::GESTE_FEUILLE;
+    const MARTYR = Geste::PIERRE;
+    const GESTE = Geste::FEUILLE;
 
 
 }
