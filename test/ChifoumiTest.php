@@ -30,4 +30,9 @@ class ChifoumiTest extends TestCase
         $resultat=$partie->joue(Chifoumi::GESTE_PIERRE, Chifoumi::GESTE_CISEAUX);
         $this->assertEquals($resultat,Chifoumi::GESTE_PIERRE);
     }
+    public function test_ciseaux_contre_feuille_gagne(){
+        $partie=new Chifoumi();
+        $resultat=$partie->joue(Chifoumi::GESTE_CISEAUX, Chifoumi::GESTE_FEUILLE);
+        $this->assertEquals($resultat,Chifoumi::GESTE_CISEAUX);
+    }
 }
