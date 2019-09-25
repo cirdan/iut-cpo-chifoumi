@@ -4,13 +4,8 @@
 namespace App;
 
 
-class Ciseaux
+class Ciseaux extends Geste
 {
-
-    /**
-     * Ciseaux constructor.
-     */
-    public function __construct()
-    {
-    }
+    const MARTYR = Chifoumi::GESTE_FEUILLE;
+    const GESTE = Chifoumi::GESTE_CISEAUX;
 }

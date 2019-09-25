@@ -1,14 +1,16 @@
 <?php
 
-
 namespace App;
 
-
-class Geste
+abstract class Geste
 {
-
-    public function gagneContre(Geste $param):bool
+    public function gagneContre(Geste $geste):bool
     {
-        return true;
+        return $geste->intitule()===static::MARTYR;
     }
+    public function intitule()
+    {
+        return static::GESTE;
+    }
+
 }
