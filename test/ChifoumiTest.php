@@ -19,6 +19,15 @@ class ChifoumiTest extends TestCase
         $partie=new Chifoumi();
         $resultat=$partie->joue(Chifoumi::GESTE_FEUILLE, Chifoumi::GESTE_PIERRE);
         $this->assertEquals($resultat,Chifoumi::GESTE_FEUILLE);
-
+    }
+    public function test_feuille_contre_ciseaux_perd(){
+        $partie=new Chifoumi();
+        $resultat=$partie->joue(Chifoumi::GESTE_FEUILLE, Chifoumi::GESTE_CISEAUX);
+        $this->assertEquals($resultat,Chifoumi::GESTE_CISEAUX);
+    }
+    public function test_pierre_contre_ciseaux_gagne(){
+        $partie=new Chifoumi();
+        $resultat=$partie->joue(Chifoumi::GESTE_PIERRE, Chifoumi::GESTE_CISEAUX);
+        $this->assertEquals($resultat,Chifoumi::GESTE_PIERRE);
     }
 }
