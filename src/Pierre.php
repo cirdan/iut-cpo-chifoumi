@@ -6,7 +6,7 @@ namespace App;
 
 class Pierre extends Geste
 {
-    const MARTYR = Geste::CISEAUX;
-    const GESTE = Geste::PIERRE;
+    const MARTYR = Ciseaux::GESTE;
+    const GESTE = "pierre";
 
 }

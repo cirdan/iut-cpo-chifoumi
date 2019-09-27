@@ -6,6 +6,6 @@ namespace App;
 
 class Ciseaux extends Geste
 {
-    const MARTYR = Geste::FEUILLE;
-    const GESTE = Geste::CISEAUX;
+    const MARTYR = Feuille::GESTE;
+    const GESTE = "ciseaux";
 }

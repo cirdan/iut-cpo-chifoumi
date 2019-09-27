@@ -6,8 +6,8 @@ namespace App;
 
 class Feuille extends Geste
 {
-    const MARTYR = Geste::PIERRE;
-    const GESTE = Geste::FEUILLE;
+    const MARTYR = Pierre::GESTE;
+    const GESTE = "feuille";
 
 
 }

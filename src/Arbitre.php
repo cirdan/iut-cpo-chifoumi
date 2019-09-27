@@ -9,7 +9,6 @@ class Arbitre
 
     public function juge(Geste $gesteJoueur1, Geste $gesteJoueur2)
     {
-
         if($gesteJoueur1->gagneContre($gesteJoueur2)){
             return $gesteJoueur1->intitule();
         }
