@@ -2,15 +2,9 @@
 
 namespace App;
 
-abstract class Geste
+interface Geste
 {
-    public function gagneContre(Geste $gesteOppose):bool
-    {
-        return $gesteOppose->intitule()===static::MARTYR;
-    }
-    public function intitule()
-    {
-        return static::GESTE;
-    }
+    public function gagneContre(Geste $gesteOppose): bool;
 
+    public function intitule();
 }

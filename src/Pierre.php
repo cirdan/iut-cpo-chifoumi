@@ -4,8 +4,9 @@
 namespace App;
 
 
-class Pierre extends Geste
+class Pierre implements Geste
 {
+    use GesteBase;
     const MARTYR = Ciseaux::GESTE;
     const GESTE = "pierre";
 

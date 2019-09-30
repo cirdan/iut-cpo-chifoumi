@@ -4,8 +4,9 @@
 namespace App;
 
 
-class Ciseaux extends Geste
+class Ciseaux implements Geste
 {
+    use GesteBase;
     const MARTYR = Feuille::GESTE;
     const GESTE = "ciseaux";
 }

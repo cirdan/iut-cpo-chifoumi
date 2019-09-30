@@ -4,8 +4,9 @@
 namespace App;
 
 
-class Feuille extends Geste
+class Feuille implements Geste
 {
+    use GesteBase;
     const MARTYR = Pierre::GESTE;
     const GESTE = "feuille";
 
